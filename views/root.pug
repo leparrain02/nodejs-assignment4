@@ -1,0 +1,10 @@
+extends layouts/main-layout.pug 
+
+block styles
+  link(rel="stylesheet", href="/css/forms.css")
+block content
+  .grid
+    form.form-control(action='/', method='POST')
+      label Users
+      input(type="text" name='username')#username
+      button.btn(type='submit') Add User
